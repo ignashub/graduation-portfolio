@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+      </div>
+    </div>
+
+    <div class="bgimg-1 w3-display-container" id="home">
+      <!-- <img src="./assets/avatar.png" class="w3-round w3-image alt="Photo of Me" width="200" height="300"> -->
+    </div>
+
+    <!-- Table of content section -->
+    <div class="w3-container w3-padding-64 bgimg-2" id="toc">
+      <h2 class="w3-center">TABLE OF CONTENT</h2>
+
+      <div class="flex">
+        <ol class="w-toc">
+          <li class="font-toc-item">
+            <a href="#preface">Preface</a>
+          </li>
+          <li class="font-toc-item">
+            <a href="#competence-profile">Competence profile</a>
+          </li>
+          <li class="font-toc-item">
+            <a href="#company">About the company</a>
+          </li>
+          <li class="font-toc-item">
+            <a href="#assignment">The assignment</a>
+            <ol>
+              <li><a class="font-toc-sub-item" href="#context">Context</a></li>
+              <li>
+                <a class="font-toc-sub-item" href="#problem-statement"
+                  >Problem statement</a
+                >
+              </li>
+              <li>
+                <a class="font-toc-sub-item" href="#solution">Solution</a>
+              </li>
+              <li>
+                <a class="font-toc-sub-item" href="#research"
+                  >Research questions</a
+                >
+              </li>
+            </ol>
+          </li>
+          <li class="font-toc-item">
+            <a href="#approach">Approach</a>
+            <ol>
+              <li>
+                <a class="font-toc-sub-item" href="#communication"
+                  >Communication</a
+                >
+              </li>
+              <li>
+                <a class="font-toc-sub-item" href="#way-of-working"
+                  >Way of working</a
+                >
+              </li>
+            </ol>
+          </li>
+          <li class="font-toc-item">
+            <a href="#portfolio">Deliverables</a>
+          </li>
+          <li class="font-toc-item">
+            <a href="#reflection">Reflection</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Preface -->
+    <div class="w3-container w3-padding-64 w3-content" id="preface">
+      <h2 class="w3-center">PREFACE</h2>
+      <p>
+        Growing up, I never would have thought that I would become a software
+        engineer. I was always more interested in sports and spending time
+        outdoors than sitting in front of a computer. But as I got older and
+        started to explore the world of technology, I realized that it was
+        something that I was actually really passionate about. It wasn't always
+        easy - there were times when I struggled to understand concepts or get
+        my code to work. But I persevered and eventually found myself on a path
+        towards a career in software engineering. Looking back, I'm so glad that
+        I took that first step and pursued my interests in technology. It's been
+        an exciting and rewarding journey, and I can't wait to see what the
+        future holds.
+      </p>
+    </div>
+
+    <!-- About the company -->
+    <div class="w3-container w3-padding-64 w3-content" id="company">
+      <h2 class="w3-center">ABOUT ME</h2>
+      <p>
+        My name is Ignas Apšega and I hail from a small city in Lithuania. At
+        present, I am studying ICT & Software Engineering at a university in
+        Eindhoven. Since the beginning of the cryptocurrency boom in 2020, I
+        have been deeply interested in the potential of blockchain technology to
+        address a wide range of global issues related to banking, privacy,
+        security, and more. This curiosity about blockchain led me to explore
+        the world of cryptocurrency and to learn about decentralized apps
+        (dApps) and smart contracts. I am excited about the opportunity to
+        participate in this graduation internship because it will allow me to
+        apply my skills as a front-end developer and to leverage my knowledge of
+        cyber security, which I have studied for two semesters.
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+          <img src="./assets/avatar.png" class="w3-round w3-image alt="Photo of
+          Me" width="200" height="300">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-padding-large">
+          <p style="margin: 0">
+            In addition to my technical expertise, I am also interested in
+            business and have a desire to create something of my own in the
+            future. I enjoy studying economics, investing, and how the financial
+            system operates at both the macro and micro levels. In my leisure
+            time, I engage in music production as a way to stimulate the
+            creative side of my brain. I am also an avid fitness enthusiast and
+            enjoy practicing martial arts. I enjoy reading books on
+            self-improvement, business, technology, and philosophy.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Competence profile -->
+    <div class="w3-container w3-padding-64 bgimg-2" id="competence-profile">
+      <h2 class="w3-center">MY COMPETENCE PROFILE</h2>
+      <p class="w3-center">
+        This is my current Competence Profile within ICT domain.
+      </p>
+      <div class="w3-content w3-padding-64 flex-center">
+        <img class="pb-20" src="./assets//img-2.jpeg" alt="" />
+        <img class="pb-20" src="./assets//img-1.jpeg" alt="" />
+      </div>
+    </div>
+
+    <!-- About the company -->
+    <div class="w3-container w3-padding-64 w3-content" id="company">
+      <h2 class="w3-center">ABOUT THE COMPANY</h2>
+      <p>
+        Byont Labs specializes in blockchain development and consultancy. Byont
+        is the largest public blockchain development agency which is an official
+        partner of Blockchain Netherlands Foundation. Their services are mostly
+        focused on writing highly secure smart contracts for DeFi apps, DAOs,
+        chain bridges, and NFTs. On top of that, they also help with
+        implementing tokenomics, utilizing smart contracts, publishing NFTs, and
+        helping to expand to the metaverse.
+      </p>
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <img src="./assets/team-office-working-together.png" class="w3-round
+        w3-image alt="Photo of Me" width="400" height="600">
+      </div>
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <img src="./assets/team-office-table-soccer.png" class="w3-round
+        w3-image alt="Photo of Me" width="400" height="600">
+      </div>
+    </div>
+
+    <!-- The assignment -->
+    <div class="w3-container w3-padding-64 bgimg-2" id="assignment">
+      <h2 class="w3-center">THE ASSIGNMENT</h2>
+      <h3 class="w3-center">CONTEXT</h3>
+      <p class="w3-content">
+        As part of my graduation internship, I had the opportunity to work on a
+        project focused on blockchain technology and the privacy concerns of DAO
+        users. DAOs are decentralized organizations that operate using smart
+        contracts on a blockchain, and one of the key challenges in this space
+        is ensuring that user privacy is protected. My internship involved
+        researching and proposing solutions to address these privacy issues,
+        with a focus on finding ways to balance the need for transparency and
+        accountability within DAOs with the need to protect sensitive user data.
+        It was a challenging and rewarding experience that allowed me to delve
+        deeply into the technical and societal implications of blockchain
+        technology and DAOs
+      </p>
+      <!-- Sub head 1 -->
+      <div id="context" class="pt-20">
+        <h3 class="w3-center">PROBLEM DESCRIPTION</h3>
+        <p class="w3-content">
+          Tooling for DAOs is in active development and new improvements and
+          solutions are introduced regularly. One of the main DAO features is
+          that they want to be completely transparent, but DAO members may want
+          to stay anonymous and still be a part of this organization. DAOs use
+          smart contracts to work in a blockchain. These smart contracts are
+          made of chunks of code that help execute operations automatically when
+          a set of criteria are met. While Ethereum was the first blockchain to
+          use smart contracts, it is deployed on various other blockchains. Many
+          blockchain networks operate as public databases, meaning anyone with
+          an Internet connection can view a list of the network's transaction
+          history. This leads to the issue of low privacy because users of DAOs
+          may not want their activities such as voting or proposing to be
+          displayed to everyone on the network. Currently, Byont has not enough
+          resources to look into possible solutions. However, they still want to
+          conduct research and do some possible development of this technology
+          for their projects.
+        </p>
+      </div>
+      <!-- Sub head 2 -->
+      <div id="problem-statement" class="pt-20">
+        <h3 class="w3-center">THE GOALS</h3>
+        <p class="w3-content">
+          The main goals of my graduation internship were to research and
+          develop solutions for improving privacy for users within DAOs. This
+          involved identifying the key privacy challenges faced by DAO users,
+          researching available tooling and technologies that could be used to
+          address these challenges, and designing and prototyping potential
+          solutions. As part of the internship, I also worked to provide advice
+          and guidance on the best approaches for addressing privacy concerns
+          within the context of DAOs. Overall, the goal of the internship was to
+          advise and show Byont the possible tooling and solutions for solving
+          privacy issues of the users within DAOs.
+        </p>
+      </div>
+      <!-- Sub head 3 -->
+      <div id="solution" class="pt-20">
+        <h3 class="w3-center">SOLUTION</h3>
+        <p class="w3-content">
+          The final products of this internship will be research documents,
+          blogs, and advice on the possible solutions for improving user privacy
+          in DAOs, with a focus on conducting research and development on
+          technologies and approaches that can improve privacy. This may involve
+          writing research documents and blogs to explore the various options
+          available, as well as providing advice and guidance on the best
+          approaches for addressing privacy concerns. In addition to this, proof
+          of concept and prototypes will be submitted to Byont, with the goal of
+          engaging in prototyping and testing of possible technologies and
+          solutions to see how they perform in practice. If possible, prototype
+          implementation for current projects of Byont should be carried out as
+          well. By doing this, Byont can help to advance the state of the art in
+          this area and contribute to the development of better tooling and
+          approaches for ensuring privacy within DAOs.
+        </p>
+      </div>
+      <!-- Sub head 4 -->
+      <div id="research" class="pt-20">
+        <h3 class="w3-center">RESEARCH QUESTIONS</h3>
+        <h4 class="w3-center">MAIN RESEARCH QUESTION</h4>
+        <p class="w3-center" style="font-weight: bold">
+          What are the best solutions to hide the data of DAO users for their
+          most common actions?
+        </p>
+        <h4 class="w3-center">SUB QUESTIONS</h4>
+        <p class="w3-center" style="font-weight: bold">1. What is a DAO?</p>
+        <p class="w3-center" style="font-weight: bold">
+          2. How do DAOs operate?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          3. What are the main activities in DAO people participate in?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          4. Is privacy really a problem within DAOs?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          5. What kind of data should be hidden for common actions of users in
+          the DAOs?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          6. What tools are there for improving user privacy in DAOs?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          7. What techniques are there for improving the user privacy of DAOs?
+        </p>
+        <p class="w3-center" style="font-weight: bold">
+          8. Could the solutions found be implemented in the current projects of
+          Byont?
+        </p>
+      </div>
+    </div>
+
+    <!-- Approach -->
+    <div class="w3-container w3-padding-64 w3-content" id="approach">
+      <h2 class="w3-center">APPROACH</h2>
+      <p>
+        The project management followed a mix of Agile methodologies, with a
+        focus on the Scrum methodology. I conducted weekly stand-ups and made
+        sprint deliveries to update my mentor on my progress so far. Each week
+        on Monday, I had Sprint planning and Sprint review meetings. In
+        addition, each sprint was one week long. Additionally, I created a
+        project plan that consisted of initiation, research and methodology,
+        execution and closure phases.
+      </p>
+      <!-- Sub head 1 -->
+      <div id="communication" class="pt-20">
+        <h3 class="w3-center">COMMUNICATION</h3>
+        <p class="w3-content">
+          I also maintained a weekly graduation blog during the internship. This
+          blog consisted of sections detailing what had been accomplished during
+          the previous week, what was planned for the coming week, what could
+          have been improved, and notes from the meetings with my company
+          mentor. This allowed me to keep track of my progress, reflect on my
+          work and keep my university mentor updated with my work on regular
+          basis.
+        </p>
+      </div>
+    </div>
+
+    <!-- deliverables -->
+    <div class="bgimg-2 w3-padding-64" id="portfolio">
+      <h2 class="w3-center">Deliverables</h2>
+      <p class="w3-content">
+        This portfolio is a collection of the deliverables produced during my
+        graduation internship. It presents my work in a chronological order and
+        covers various aspects of the project, from research and analysis to
+        implementation and testing. Through this portfolio, I aim to provide a
+        comprehensive overview of the process and outcomes of my internship. It
+        includes my research documents, blog posts, prototype implementation,
+        meeting notes and presentations.
+      </p>
+      <p class="w3-content">
+        The best way to navigate through this portfolio is to open and read
+        documents from left to right, top to bottom like reading a book:
+      </p>
+      <div class="w3-row-padding w3-center w3-padding-top-64 w3-content">
+        <div class="w3-col m3">
+          <a
+            href="../Analysis/Project_plan.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Project Plan"
+            >1.
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Project Plan
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <a
+            href="../Analysis/DAO_analysis.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="DAO Analysis"
+            >2.
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >DAO Analysis
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <a
+            href="../Advise/Zero_Knowledge_Proofs_Protocols_and_libraries.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Zero Knowledge Proofs Protocols and libraries"
+            >3.
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Zero Knowledge Proofs Protocols and libraries
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          <div>
+            4.
+            <a
+              href="https://www.byont.io/blog/zero-knowledge-proof-how-it-works-and-the-alibaba-cave-experiment"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="Blog 1: Zero Knowledge Proof - How it works"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >Blog 1: Zero Knowledge Proof - How it works
+            </a>
+          </div>
+          <div>
+            <a
+              href="../Communication/BLOG_1_context.pdf"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="Blog 1: Context Document"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >Blog 1: Context document
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-center w3-padding-top-32 w3-content">
+        <div class="w3-col m3">
+          <div>
+            5.
+            <a
+              href="../Communication/ZKP_Presentation.pdf"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="ZKP Presentation"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >ZKP Presentation
+            </a>
+          </div>
+          <div>
+            <a
+              href="../Communication/ZKP_Presentation_context.pdf"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="ZKP Presentation Context Document"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >ZKP Presentation: Context document
+            </a>
+          </div>
+        </div>
+
+        <div class="w3-col m3">
+          <div>
+            6.
+            <a
+              href="../Communication/ZKP_Presentation_2.pdf"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="ZKP Presentation 2"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >ZKP Presentation 2: DAOs and Zero-Knowledge Proofs
+            </a>
+          </div>
+          <div>
+            <a
+              href="../Communication/ZKP_Presentation_2_context.pdf"
+              style="width: 100%"
+              onclick="onClick(this)"
+              alt="ZKP Presentation 2 Context Document"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 20px; padding-right: 5px"
+              ></i
+              >ZKP Presentation 2: Context document
+            </a>
+          </div>
+        </div>
+
+        <div class="w3-col m3">
+          7.
+          <a
+            href="../Realisation/Circom_and_SnarkJS.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="zk-Snarks libraries: Circom and SnarkJS implementation"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >zk-Snarks libraries: Circom and SnarkJS implementation
+          </a>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-center w3-padding-32 w3-content">
+        <div class="w3-col m3">
+          8.
+          <a
+            href="../Design/Design_document.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Design Document"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Architecture Design
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          9.
+          <a
+            href="../Management/Integration_into_Byont.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Proof of Concept"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Integration and Management in Byonts WEB3 template
+          </a>
+        </div>
+
+        <div class="w3-col m3">
+          10.
+          <a
+            href="../Communication/Graduation_blog.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Proof of Concept"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Gradution Communication Blog
+          </a>
+        </div>
+      </div>
+      <div class="w3-row-padding w3-center w3-padding-32 w3-content">
+        <div class="w3-col m3">
+          11.
+          <a
+            href="../Advise/Final_Advice.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Final Advise"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Final Advice
+          </a>
+        </div>
+        <div class="w3-col m3">
+          12.
+          <a
+            href="../Analysis/Semaphore_Protocol.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Final Advise"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Semaphore Protocol
+          </a>
+        </div>
+        <div class="w3-col m3">
+          13.
+          <a
+            href="../Realisation/technical_document.pdf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Final Advise"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Technical Document
+          </a>
+        </div>
+        <div class="w3-col m3">
+          14.
+          <a
+            href="https://drive.google.com/file/d/1DpwX3dXwLOUPMn7b9uAEw-iTzYKk9DuX/view?usp=sharingf"
+            style="width: 100%"
+            onclick="onClick(this)"
+            alt="Demo"
+          >
+            <i
+              class="fa fa-file-pdf-o"
+              style="font-size: 20px; padding-right: 5px"
+            ></i
+            >Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reflection -->
+    <div class="w3-container w3-padding-64 w3-content" id="reflection">
+      <h2 class="w3-center">REFLECTION</h2>
+      <p>
+        The graduation internship project started off very well, with everything
+        going according to plan and meeting the initial goals. However, as time
+        passed and the complexity and scope of the project grew, it became
+        increasingly difficult to follow the project plan and maintain focus on
+        the initial goals. One of the main challenges I faced was the technology
+        I was working with, which was very new and involved an academic level of
+        mathematical knowledge and cryptography that I did not have. This made
+        it difficult to fully understand the technical aspects of the project,
+        and it also impacted the planning process as I struggled to grasp the
+        concepts and techniques being used.
+      </p>
+      <p>
+        In addition to this, the research phase of the project took longer than
+        expected, as I had to spend extra time learning about the technology and
+        trying to get up to speed. Despite my best efforts, I am not entirely
+        proud of the results of the project, and I feel that more could have
+        been done to add value for the company.
+      </p>
+      <p>
+        Despite these challenges, I am proud of this internship for a number of
+        reasons. One of the biggest risks I took was working with new, emerging
+        technologies, which can be both exciting and challenging. I learned a
+        lot about the professional skills required to be successful in the ICT
+        domain, and I gained valuable experience working on a real-world
+        project.
+      </p>
+      <p>
+        One of the most important things I learned as an ICT professional is the
+        importance of gathering user requirements from stakeholders which I wish
+        I did more properly. This is crucial in order to ensure that the project
+        is meeting the needs of the users and delivering value. I learned the
+        importance of asking the right questions and listening carefully to the
+        responses, as well as being proactive in seeking out feedback and input
+        from stakeholders. Communication with stakeholders is also key, as it
+        helps to keep everyone on the same page and ensure that the project is
+        moving in the right direction. This was a big learning point for me
+      </p>
+      <p>
+        Another important lesson I learned is the importance of timing. As an
+        ICT professional, it is essential to be able to accurately measure the
+        time needed to solve a problem or implement a particular solution. This
+        helps to ensure that projects stay on track and are completed within the
+        allocated time and resources. I learned the value of creating detailed
+        project plans and schedules, and the importance of regularly reviewing
+        and updating these plans to account for changing circumstances and
+        priorities.
+      </p>
+      <p>
+        In addition to the technical and professional skills I gained during
+        this internship, I also learned a lot about myself and how I work best.
+        I discovered that I enjoy being challenged and pushed out of my comfort
+        zone. I also learned that I am more resilient and capable than I had
+        previously thought, and that I can handle difficult situations and
+        setbacks with grace and determination.
+      </p>
+      <p>
+        Overall, this internship has been a valuable learning experience for me,
+        and I am grateful for the opportunity to work on such a challenging and
+        rewarding project. While there were certainly some difficulties and
+        setbacks along the way, I believe that I have grown both professionally
+        and personally as a result of this experience. I have gained new skills,
+        knowledge, and confidence, and I am excited to apply these lessons as I
+        move forward in my career.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding bg-blue">
+      <div class="w3-xlarge" style="display: inline">
+        <p style="color: #fff; font-size: 18px">© Ignas Apšega 2022</p>
+        <a href="https://www.linkedin.com/in/ignas-ap%C5%A1ega-4495601bb/">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById('myNavbar');
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            'w3-bar' + ' w3-card' + ' w3-animate-top' + ' w3-black';
+        } else {
+          navbar.className = navbar.className.replace(
+            ' w3-card w3-animate-top w3-black',
+            ''
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById('navDemo');
+        if (x.className.indexOf('w3-show') == -1) {
+          x.className += ' w3-show';
+        } else {
+          x.className = x.className.replace(' w3-show', '');
+        }
+      }
+    </script>
+  </body>
+</html>
